@@ -53,7 +53,7 @@ export default function HeroImages() {
         />
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -66,7 +66,7 @@ export default function HeroImages() {
           width={1342}
           height={1671}
         />
-      </motion.div>
+      </motion.div> */}
 
       <motion.div
         initial="hidden"
