@@ -7,7 +7,6 @@ import Header from "@/components/shared/header/Header";
 import Footer from "@/components/shared/footer/Footer";
 
 const GTM_ID = "GTM-5PT3M7ZG";
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 const raleway = Raleway({
   weight: ["300", "400", "600"],
@@ -41,9 +40,7 @@ export default function RootLayout({
     <html lang="ru" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <GoogleTagManager
-          gtmId={baseUrl === "https://www.nurlan-official.com/" ? GTM_ID : ""}
-        />
+        <GoogleTagManager gtmId={GTM_ID} />
       </head>
       <body
         className={`${raleway.variable} ${michelin.variable} flex min-h-screen flex-col antialiased`}
